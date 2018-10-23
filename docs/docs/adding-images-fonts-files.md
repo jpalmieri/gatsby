@@ -31,7 +31,7 @@ export default Header
 ```
 
 This ensures that when the project is built, Webpack will correctly move the
-images into the public folder, and provide us with correct paths.
+images into the public folder, and provide us https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/gatsby-link.md#prefixed-paths-helper correct paths.
 
 This works in CSS too:
 
@@ -128,9 +128,9 @@ If you put a file into the `static` folder, it will **not** be processed by
 Webpack. Instead it will be copied into the public folder untouched. E.g. if you
 add a file named `sun.jpg` to the static folder, it'll be copied to
 `public/sun.jpg`. To reference assets in the `static` folder, you'll need to
-[import a helper function from `gatsby` named `withPrefix`](/docs/gatsby-link/#prefixed-paths-helper).
+[import a helper function from `gatsby` named `withPrefix`](/docs/docs/gatsby-link.md#prefixed-paths-helper).
 You will need to make sure
-[you set `pathPrefix` in your gatsby-config.js for this to work](/docs/path-prefix/).
+[you set `pathPrefix` in your gatsby-config.js for this to work](/docs/docs/path-prefix.md).
 
 ```js
 import { withPrefix } from 'gatsby'
